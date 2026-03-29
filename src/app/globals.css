@@ -7,12 +7,12 @@ html {
 }
 
 body {
-  background-color: #0b0f11;
-  color: #e7eef5;
+  background-color: #ffffff;
+  color: #1a2e1f;
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-green to-brand-green-light;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-green-dark to-brand-green-light;
   }
 }
