@@ -1,10 +1,11 @@
 import Image from "next/image";
+import ModalQualificacao from "./ModalQualificacao";
 
 function CTAButton({ text = "QUERO MEU INGRESSO DUPLO POR R$7" }: { text?: string }) {
   return (
     <a
-      href="javascript:;"
-      className="pagtrust-funnel-next-step inline-block w-full sm:w-auto text-center px-8 py-4 rounded-xl font-bold text-white text-lg
+      href="#"
+      className="abrir-popup-qualificacao inline-block w-full sm:w-auto text-center px-8 py-4 rounded-xl font-bold text-white text-lg
         bg-brand-green-dark hover:bg-brand-green
         shadow-lg shadow-brand-green/20
         hover:shadow-xl hover:shadow-brand-green/30 hover:scale-[1.02]
@@ -16,21 +17,32 @@ function CTAButton({ text = "QUERO MEU INGRESSO DUPLO POR R$7" }: { text?: strin
 }
 
 /* ═══════════════════════════════════════════
+   FAIXA TOPO
+   ═══════════════════════════════════════════ */
+function TopBanner() {
+  return (
+    <div className="w-full bg-brand-green-dark text-white text-center text-sm font-semibold py-2.5 px-4 tracking-wide">
+      Exclusivo para Terapeutas e Profissionais da Saúde
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════════
    HERO (parametrizado)
    ═══════════════════════════════════════════ */
 function Hero({ headline, subHeadline }: { headline: React.ReactNode; subHeadline: string }) {
   return (
-    <section id="hero" className="relative px-4 py-16 sm:py-24 overflow-hidden">
+    <section id="hero" className="relative px-4 pt-6 sm:pt-10 pb-16 sm:pb-24 overflow-hidden">
       <div className="absolute inset-0 bg-white" />
 
       <div className="relative z-10 max-w-3xl mx-auto text-center space-y-8">
         {/* Badge com data */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-green-bg border border-brand-green/20 text-sm text-brand-green-dark font-medium">
           <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse" aria-hidden="true" />
-          23 a 27 de março — Neurociência da Respiração iBreathwork
+          06 a 10 de abril — Neurociência da Respiração iBreathwork
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight text-brand-text">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-tight text-brand-text">
           {headline}
         </h1>
 
@@ -71,6 +83,29 @@ function Hero({ headline, subHeadline }: { headline: React.ReactNode; subHeadlin
         <div className="flex items-center justify-center gap-2 pt-2">
           <Image src="/images/logo-mec.png" alt="Reconhecido pelo MEC" width={80} height={32} />
           <span className="text-xs text-brand-muted">Pós-graduação reconhecida</span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ═══════════════════════════════════════════
+   COMPROMISSO
+   ═══════════════════════════════════════════ */
+function Compromisso() {
+  return (
+    <section className="px-4 py-10 sm:py-12">
+      <div className="max-w-3xl mx-auto">
+        <div className="p-5 sm:p-6 rounded-2xl bg-brand-green-bg/50 border border-brand-green/15 text-center space-y-2">
+          <p className="text-base sm:text-lg text-brand-text leading-relaxed">
+            <span className="font-bold">O ingresso é simbólico.</span> O que cobramos de verdade é o seu{" "}
+            <span className="font-bold text-brand-green-dark">compromisso</span>: dedicar de 2 a 3 horas por noite
+            para participar da sessão.
+          </p>
+          <p className="text-sm sm:text-base text-brand-muted">
+            Este é o{" "}
+            <span className="font-semibold text-brand-green-dark">1º Módulo da nossa Pós-Graduação em Neurociência da Respiração</span> — e o nível de entrega é real.
+          </p>
         </div>
       </div>
     </section>
@@ -378,14 +413,6 @@ function OfferStack() {
               </span>
               <span className="text-5xl font-bold text-brand-green">R$ 7</span>
             </div>
-            <div className="pt-4 p-4 rounded-xl bg-brand-green-bg/50 border border-brand-green/10">
-              <p className="text-sm text-brand-text leading-relaxed">
-                <span className="font-bold">O ingresso é simbólico.</span> O que cobramos de verdade é o seu{" "}
-                <span className="font-bold text-brand-green-dark">compromisso</span>: dedicar de 2 a 3 horas por noite
-                para participar da sessão. Este é o{" "}
-                <span className="font-bold text-brand-green-dark">1º Módulo da nossa Pós-Graduação em Neurociência da Respiração</span> — e o nível de entrega é real.
-              </p>
-            </div>
           </div>
         </div>
 
@@ -473,7 +500,9 @@ interface LandingPageProps {
 export default function LandingPage({ heroHeadline, heroSubHeadline }: LandingPageProps) {
   return (
     <main>
+      <TopBanner />
       <Hero headline={heroHeadline} subHeadline={heroSubHeadline} />
+      <Compromisso />
       <Problema />
       <Solucao />
       <ProvaSocial />
@@ -485,6 +514,8 @@ export default function LandingPage({ heroHeadline, heroSubHeadline }: LandingPa
       <footer className="px-4 py-8 text-center text-sm text-brand-muted border-t border-brand-border">
         <p>HFC — Humanos Fora da Curva | Felipe Marx</p>
       </footer>
+
+      <ModalQualificacao />
     </main>
   );
 }
