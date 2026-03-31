@@ -22,7 +22,7 @@ const AC_CONFIG = {
 
 const PAGTRUST_URLS: Record<string, string> = {
   green:
-    "https://checkout.pagtrust.com.br/ck446142cf?funnel=fn2b9610af&utm_term=q",
+    "https://checkout.pagtrust.com.br/ck517f8818?funnel=fn2b9610af&utm_term=q",
   yellow:
     "https://checkout.pagtrust.com.br/ck01aa49b6?funnel=fn4b1b7547&utm_term=d",
   red: "https://checkout.pagtrust.com.br/ck01aa49b6?funnel=fn4b1b7547&utm_term=d",
