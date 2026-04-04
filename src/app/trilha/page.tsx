@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import CopyLinkButton from "@/components/CopyLinkButton";
 
 export const metadata: Metadata = {
   title: "Trilha do Desafio de 5 Dias — Neuroci\u00eancia da Respira\u00e7\u00e3o | iBreathwork",
@@ -277,7 +278,7 @@ export default function TrilhaPage() {
             </div>
             <div>
               <h3 className="text-lg font-semibold text-brand-text mb-2">
-                N&atilde;o Consegue Estar Ao Vivo?
+                N&atilde;o Pode Participar?
               </h3>
               <p className="text-brand-muted text-[15px] leading-relaxed mb-4">
                 Garanta o acesso &agrave;s grava&ccedil;&otilde;es das 5 sess&otilde;es do Desafio de 5 Dias.
@@ -295,6 +296,46 @@ export default function TrilhaPage() {
                 </svg>
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── INGRESSO CORTESIA ── */}
+      <section className="max-w-2xl mx-auto px-5 pb-14">
+        <div className="bg-gradient-to-br from-brand-green-bg/80 to-brand-green-bg/30 border-2 border-brand-green/25 rounded-2xl p-6 sm:p-8">
+          <div className="text-center">
+            {/* Gift icon */}
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white border border-brand-green/20 mb-5 shadow-sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7 text-brand-green">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+              </svg>
+            </div>
+
+            <h3 className="text-xl sm:text-2xl font-bold text-brand-text mb-3">
+              Ingresso Cortesia
+            </h3>
+            <p className="text-brand-text text-[15px] leading-relaxed max-w-lg mx-auto">
+              Conhece um <strong>terapeuta, psic&oacute;logo ou profissional da sa&uacute;de</strong> que
+              precisa conhecer o poder do Breathwork cient&iacute;fico? Envie este ingresso cortesia para ele.
+            </p>
+
+            {/* Restriction badge */}
+            <div className="inline-flex items-center gap-2 bg-white border border-amber-300/60 rounded-full px-4 py-1.5 mt-4 mb-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4 text-amber-600">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+              </svg>
+              <span className="text-xs font-semibold text-amber-700 uppercase tracking-wide">
+                Exclusivo para profissionais da sa&uacute;de
+              </span>
+            </div>
+
+            <p className="text-brand-muted text-sm leading-relaxed max-w-md mx-auto mt-2">
+              Este ingresso &eacute; destinado <strong className="text-brand-text">exclusivamente a terapeutas,
+              psic&oacute;logos, fisioterapeutas e demais profissionais da &aacute;rea da sa&uacute;de</strong>.
+              Copie o link abaixo e envie para um colega que merece essa oportunidade.
+            </p>
+
+            <CopyLinkButton />
           </div>
         </div>
       </section>
