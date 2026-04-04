@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Trilha do Desafio 5D — Neuroci\u00eancia da Respira\u00e7\u00e3o | iBreathwork",
+  title: "Trilha do Desafio de 5 Dias — Neuroci\u00eancia da Respira\u00e7\u00e3o | iBreathwork",
   description:
-    "O 1\u00ba M\u00f3dulo da P\u00f3s-Gradua\u00e7\u00e3o em Neuroci\u00eancia da Respira\u00e7\u00e3o. 5 dias, 5 sess\u00f5es ao vivo, do n\u00edvel 1 ao avan\u00e7ado.",
+    "O 1\u00ba M\u00f3dulo da P\u00f3s-Gradua\u00e7\u00e3o em Neuroci\u00eancia da Respira\u00e7\u00e3o. 5 dias, 5 sess\u00f5es, do n\u00edvel 1 ao avan\u00e7ado.",
 };
 
 const sessions = [
@@ -88,14 +88,13 @@ export default function TrilhaPage() {
           {/* Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-text leading-tight mb-6">
             O 1&ordm; M&oacute;dulo da P&oacute;s-Gradua&ccedil;&atilde;o em Neuroci&ecirc;ncia da Respira&ccedil;&atilde;o.{" "}
-            <span className="text-gradient">5 Dias. Acesso Livre.</span>
+            <span className="text-gradient">5 Dias.</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg text-brand-muted max-w-2xl mx-auto leading-relaxed">
             De 06 a 10 de abril, voc&ecirc; vai receber o mesmo conte&uacute;do que alunos de p&oacute;s-gradua&ccedil;&atilde;o pagam para acessar
-            &mdash; neuroci&ecirc;ncia aplicada, protocolos pr&aacute;ticos e t&eacute;cnicas avan&ccedil;adas de Breathwork. Tudo em 5 sess&otilde;es ao
-            vivo.
+            &mdash; neuroci&ecirc;ncia aplicada, protocolos pr&aacute;ticos e t&eacute;cnicas avan&ccedil;adas de Breathwork. Tudo em 5 sess&otilde;es.
           </p>
         </div>
       </section>
@@ -109,7 +108,7 @@ export default function TrilhaPage() {
             protocolos testados e aplica&ccedil;&atilde;o cl&iacute;nica.
           </p>
           <p className="text-brand-text leading-relaxed text-[15px] mt-4">
-            O Desafio 5D &eacute; o primeiro m&oacute;dulo completo da P&oacute;s-Gradua&ccedil;&atilde;o em Neuroci&ecirc;ncia da Respira&ccedil;&atilde;o. Durante 5
+            O Desafio de 5 Dias &eacute; o primeiro m&oacute;dulo completo da P&oacute;s-Gradua&ccedil;&atilde;o em Neuroci&ecirc;ncia da Respira&ccedil;&atilde;o. Durante 5
             dias, voc&ecirc; vai sair do <em>&ldquo;eu sei que respira&ccedil;&atilde;o &eacute; importante&rdquo;</em> para{" "}
             <em>&ldquo;eu sei exatamente como aplicar isso nos meus pacientes e na minha pr&aacute;tica&rdquo;</em>.
           </p>
@@ -130,7 +129,7 @@ export default function TrilhaPage() {
           </div>
           <h3 className="text-lg font-semibold text-brand-text mb-3">Prepare-se para Participar</h3>
           <p className="text-brand-text text-[15px] leading-relaxed">
-            Cada sess&atilde;o tem <strong>3 horas de conte&uacute;do ao vivo</strong>. Organize sua agenda para estar presente
+            Cada sess&atilde;o tem <strong>3 horas de conte&uacute;do</strong>. Organize sua agenda para estar presente
             do in&iacute;cio ao fim &mdash; &eacute; assim que voc&ecirc; vai extrair o m&aacute;ximo de cada dia.
           </p>
           <p className="text-brand-muted text-[15px] leading-relaxed mt-4">
@@ -147,7 +146,7 @@ export default function TrilhaPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-brand-text">
             Sua Trilha de 5 Dias
           </h2>
-          <p className="text-brand-muted mt-2 text-sm">Cada sess&atilde;o com 3 horas de conte&uacute;do ao vivo</p>
+          <p className="text-brand-muted mt-2 text-sm">Cada sess&atilde;o com 3 horas de conte&uacute;do</p>
         </div>
 
         {/* Timeline */}
@@ -175,7 +174,7 @@ export default function TrilhaPage() {
                   <div className="flex items-start gap-3 mb-2">
                     <div className="text-brand-green mt-0.5">{s.icon}</div>
                     <div>
-                      <p className="text-xs text-brand-muted font-medium">{s.date} &mdash; 3h ao vivo</p>
+                      <p className="text-xs text-brand-muted font-medium">{s.date} &mdash; 3h de conte&uacute;do</p>
                       <h3 className="text-base sm:text-lg font-semibold text-brand-text leading-snug">
                         {s.title}
                       </h3>
@@ -209,7 +208,7 @@ export default function TrilhaPage() {
           <div className="max-w-lg mx-auto space-y-4 mt-6">
             <p className="text-brand-text text-[15px] leading-relaxed">
               Cada sess&atilde;o esconde uma <strong>palavra-chave secreta</strong>. Ela s&oacute; &eacute; revelada para quem
-              participa ao vivo.
+              participa.
             </p>
             <p className="text-brand-text text-[15px] leading-relaxed">
               Ao final dos 5 dias, quem tiver as 5 palavras-chave desbloqueia o{" "}
@@ -245,7 +244,7 @@ export default function TrilhaPage() {
 
         <p className="text-brand-muted text-[15px] leading-relaxed max-w-lg mx-auto mb-3">
           De 06 a 10 de abril, voc&ecirc; vai acessar o primeiro m&oacute;dulo completo da P&oacute;s-Gradua&ccedil;&atilde;o em
-          Neuroci&ecirc;ncia da Respira&ccedil;&atilde;o. S&atilde;o 3 horas por dia de conte&uacute;do ao vivo, do n&iacute;vel 1 ao avan&ccedil;ado.
+          Neuroci&ecirc;ncia da Respira&ccedil;&atilde;o. S&atilde;o 3 horas por dia de conte&uacute;do, do n&iacute;vel 1 ao avan&ccedil;ado.
         </p>
         <p className="text-brand-muted text-[15px] leading-relaxed max-w-lg mx-auto mb-8">
           Profissionais que dominam Breathwork com base cient&iacute;fica n&atilde;o competem com os demais.{" "}
@@ -257,7 +256,7 @@ export default function TrilhaPage() {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4 text-brand-green-dark">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
           </svg>
-          <span className="text-sm font-medium text-brand-green-dark">06 a 10 de abril &mdash; 3h por sess&atilde;o</span>
+          <span className="text-sm font-medium text-brand-green-dark">06 a 10 de abril &mdash; 3h por dia</span>
         </div>
       </section>
 
