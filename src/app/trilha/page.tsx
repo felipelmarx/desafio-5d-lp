@@ -235,6 +235,70 @@ export default function TrilhaPage() {
         </div>
       </section>
 
+      {/* ── ÁUDIOS GRÁTIS ── */}
+      <section className="max-w-2xl mx-auto px-5 pb-14">
+        <div className="bg-brand-green-bg/50 border border-brand-green/20 rounded-2xl p-6 sm:p-8">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-white border border-brand-green/20 flex items-center justify-center">
+              <span className="text-2xl">🎁</span>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-brand-text mb-2">
+                7 Dias Gr&aacute;tis dos &Aacute;udios Respirat&oacute;rios N&iacute;vel 1
+              </h3>
+              <p className="text-brand-muted text-[15px] leading-relaxed mb-4">
+                Pratique durante o desafio com os protocolos respirat&oacute;rios guiados.
+                S&atilde;o 7 dias de acesso gratuito para voc&ecirc; experimentar na pr&aacute;tica.
+              </p>
+              <a
+                href="https://lp.felipemarx.com.br/protocolos-respiratorios-7-dias-off-5d"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-brand-green text-white font-semibold text-sm rounded-full px-6 py-3 hover:bg-brand-green-dark transition-colors"
+              >
+                Quero meus 7 dias gr&aacute;tis
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── GRAVAÇÕES ── */}
+      <section className="max-w-2xl mx-auto px-5 pb-14">
+        <div className="bg-white border border-brand-border rounded-2xl p-6 sm:p-8">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-brand-surface border border-brand-border flex items-center justify-center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6 text-brand-green-dark">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-brand-text mb-2">
+                N&atilde;o Consegue Estar Ao Vivo?
+              </h3>
+              <p className="text-brand-muted text-[15px] leading-relaxed mb-4">
+                Garanta o acesso &agrave;s grava&ccedil;&otilde;es das 5 sess&otilde;es do Desafio de 5 Dias.
+                Assista no seu tempo, quantas vezes quiser.
+              </p>
+              <a
+                href="https://checkout.pagtrust.com.br/ck3a1fe11e?funnel=fn28445dcc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-brand-text text-white font-semibold text-sm rounded-full px-6 py-3 hover:bg-brand-text/90 transition-colors"
+              >
+                Garantir acesso &agrave;s grava&ccedil;&otilde;es
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── FECHAMENTO ── */}
       <section className="max-w-2xl mx-auto px-5 py-16 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-brand-text mb-4">
