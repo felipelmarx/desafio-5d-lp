@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const sessions = [
   {
     day: 1,
-    date: "06 de abril",
+    date: "Segunda-feira",
     title: "Neuroci\u00eancia do Breathwork + Pr\u00e1ticas N\u00edvel 1",
     description:
       "Voc\u00ea vai entender o que acontece no seu sistema nervoso quando respira de forma intencional \u2014 e vai praticar os primeiros protocolos para regula\u00e7\u00e3o de estresse e ansiedade. Aqui \u00e9 onde a base cient\u00edfica encontra a aplica\u00e7\u00e3o pr\u00e1tica.",
@@ -22,7 +22,7 @@ const sessions = [
   },
   {
     day: 2,
-    date: "07 de abril",
+    date: "Ter\u00e7a-feira",
     title: "Breathwork para \u00caxtase + Pr\u00e1ticas N\u00edvel 2",
     description:
       "Protocolos psicod\u00e9licos medicinais que levam o corpo a estados de \u00eaxtase e sensa\u00e7\u00f5es org\u00e1sticas \u2014 sem subst\u00e2ncia nenhuma. Voc\u00ea vai experimentar na pr\u00e1tica e entender a neuroci\u00eancia por tr\u00e1s.",
@@ -34,7 +34,7 @@ const sessions = [
   },
   {
     day: 3,
-    date: "08 de abril",
+    date: "Quarta-feira",
     title: "Breathwork para Traumas e Reprograma\u00e7\u00e3o + Pr\u00e1ticas N\u00edvel 3",
     description:
       "T\u00e9cnicas avan\u00e7adas de processamento de traumas e reprograma\u00e7\u00e3o neurol\u00f3gica profunda. Este \u00e9 o n\u00edvel que separa quem \u201cconhece respira\u00e7\u00e3o\u201d de quem domina Breathwork como ferramenta cl\u00ednica.",
@@ -46,7 +46,7 @@ const sessions = [
   },
   {
     day: 4,
-    date: "09 de abril",
+    date: "Quinta-feira",
     title: "Potencializando Suas Pr\u00e1ticas Terap\u00eauticas",
     description:
       "Como integrar o Breathwork no tratamento de diversas condi\u00e7\u00f5es e situa\u00e7\u00f5es. Se voc\u00ea \u00e9 terapeuta, psic\u00f3logo ou profissional de sa\u00fade, este dia foi feito para a sua realidade.",
@@ -58,7 +58,7 @@ const sessions = [
   },
   {
     day: 5,
-    date: "10 de abril",
+    date: "Sexta-feira",
     title: "Como Tornar-se um Instrutor Certificado",
     description:
       "Os pr\u00f3ximos passos para se tornar um instrutor certificado na terapia que mais cresce no mundo. Quem chega at\u00e9 aqui j\u00e1 n\u00e3o \u00e9 mais o mesmo profissional que come\u00e7ou no dia 1.",
@@ -94,7 +94,7 @@ export default function TrilhaPage() {
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg text-brand-muted max-w-2xl mx-auto leading-relaxed">
-            De 06 a 10 de abril, voc&ecirc; vai receber o mesmo conte&uacute;do que alunos de p&oacute;s-gradua&ccedil;&atilde;o pagam para acessar
+            De segunda a sexta, voc&ecirc; vai receber o mesmo conte&uacute;do que alunos de p&oacute;s-gradua&ccedil;&atilde;o pagam para acessar
             &mdash; neuroci&ecirc;ncia aplicada, protocolos pr&aacute;ticos e t&eacute;cnicas avan&ccedil;adas de Breathwork. Tudo em 5 sess&otilde;es.
           </p>
         </div>
@@ -348,7 +348,7 @@ export default function TrilhaPage() {
         </h2>
 
         <p className="text-brand-muted text-[15px] leading-relaxed max-w-lg mx-auto mb-3">
-          De 06 a 10 de abril, voc&ecirc; vai acessar o primeiro m&oacute;dulo completo da P&oacute;s-Gradua&ccedil;&atilde;o em
+          De segunda a sexta, voc&ecirc; vai acessar o primeiro m&oacute;dulo completo da P&oacute;s-Gradua&ccedil;&atilde;o em
           Neuroci&ecirc;ncia da Respira&ccedil;&atilde;o. S&atilde;o 3 horas por dia de conte&uacute;do, do n&iacute;vel 1 ao avan&ccedil;ado.
         </p>
         <p className="text-brand-muted text-[15px] leading-relaxed max-w-lg mx-auto mb-8">
@@ -361,7 +361,7 @@ export default function TrilhaPage() {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4 text-brand-green-dark">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
           </svg>
-          <span className="text-sm font-medium text-brand-green-dark">06 a 10 de abril &mdash; 3h por dia</span>
+          <span className="text-sm font-medium text-brand-green-dark">Segunda a sexta &mdash; 3h por dia</span>
         </div>
       </section>
 
