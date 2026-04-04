@@ -88,7 +88,7 @@ export default function TrilhaPage() {
           {/* Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-text leading-tight mb-6">
             O 1&ordm; M&oacute;dulo da P&oacute;s-Gradua&ccedil;&atilde;o em Neuroci&ecirc;ncia da Respira&ccedil;&atilde;o.{" "}
-            <span className="text-gradient">5 Dias.</span>
+            <span className="text-gradient">Desafio de 5 Dias.</span>
           </h1>
 
           {/* Subheadline */}
