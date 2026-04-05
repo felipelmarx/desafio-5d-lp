@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 const sessions = [
   {
     day: 1,
+    date: "Segunda-Feira",
     title: "Neuroci\u00eancia do Breathwork + Pr\u00e1ticas N\u00edvel 1",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
@@ -19,6 +20,7 @@ const sessions = [
   },
   {
     day: 2,
+    date: "Ter\u00e7a-Feira",
     title: "Breathwork para \u00caxtase + Pr\u00e1ticas N\u00edvel 2",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
@@ -28,6 +30,7 @@ const sessions = [
   },
   {
     day: 3,
+    date: "Quarta-Feira",
     title: "Breathwork para Traumas e Reprograma\u00e7\u00e3o + Pr\u00e1ticas N\u00edvel 3",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
@@ -37,6 +40,7 @@ const sessions = [
   },
   {
     day: 4,
+    date: "Quinta-Feira",
     title: "Potencializando Suas Pr\u00e1ticas Terap\u00eauticas",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
@@ -46,6 +50,7 @@ const sessions = [
   },
   {
     day: 5,
+    date: "Sexta-Feira",
     title: "Como Tornar-se um Instrutor Certificado",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
@@ -73,8 +78,8 @@ export default function TrilhaPage() {
 
           {/* Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-text leading-tight mb-6">
-            O 1&ordm; M&oacute;dulo da P&oacute;s-Gradua&ccedil;&atilde;o em Neuroci&ecirc;ncia da Respira&ccedil;&atilde;o.{" "}
-            <span className="text-gradient">Desafio de 5 Dias.</span>
+            <span className="text-gradient">Desafio de 5 Dias.</span>{" "}
+            Conte&uacute;do do 1&deg; M&oacute;dulo da Nossa P&oacute;s-Gradua&ccedil;&atilde;o em Neuroci&ecirc;ncia da Respira&ccedil;&atilde;o.
           </h1>
 
           {/* Subheadline */}
@@ -133,6 +138,9 @@ export default function TrilhaPage() {
                       {s.day}
                     </span>
                   </div>
+                  <span className="text-[10px] font-medium text-brand-muted mt-1 text-center leading-none">
+                    {s.date}
+                  </span>
                 </div>
 
                 {/* Card */}
