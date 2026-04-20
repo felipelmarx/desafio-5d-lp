@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -53,6 +54,7 @@ export default function RootLayout({
         <Script id="pagtrust-landing-page" strategy="afterInteractive">{`
           (function(P,l,a,t,f,o,r,m){if(l[t])return;l[t]=1;f=Number(new Date());a=l.getElementsByTagName("body")[0];const s=l.createElement("script");s.src="https://static.pagtrust.com.br/js/landingPage.min.js?=v="+f;s.async=!0;s.defer=!0;s.addEventListener("load",()=>{if(P.landingPage){P.landingPage?.({useF:0,funnelDomain:null})}});a.appendChild(s)})(window,document,null,"landing-page-initialized")
         `}</Script>
+        <Analytics />
       </body>
     </html>
   );
